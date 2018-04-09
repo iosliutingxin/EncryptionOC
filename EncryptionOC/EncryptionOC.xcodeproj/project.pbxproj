@@ -16,6 +16,9 @@
 		51B28AB2207B12A20047072C /* EncryptionOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28AB1207B12A20047072C /* EncryptionOCTests.m */; };
 		51B28ABD207B12A20047072C /* EncryptionOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28ABC207B12A20047072C /* EncryptionOCUITests.m */; };
 		51B28ACE207B14000047072C /* MD5_code.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28ACD207B14000047072C /* MD5_code.m */; };
+		51B28AD2207B18F80047072C /* HMac_code.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28AD1207B18F80047072C /* HMac_code.m */; };
+		51B28AD6207B3D000047072C /* DesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28AD5207B3D000047072C /* DesEncrypt.m */; };
+		51B28ADB207B40640047072C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28ADA207B40640047072C /* GTMBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,13 @@
 		51B28ABE207B12A20047072C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B28ACC207B14000047072C /* MD5_code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MD5_code.h; sourceTree = "<group>"; };
 		51B28ACD207B14000047072C /* MD5_code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MD5_code.m; sourceTree = "<group>"; };
+		51B28AD0207B18F80047072C /* HMac_code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMac_code.h; sourceTree = "<group>"; };
+		51B28AD1207B18F80047072C /* HMac_code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMac_code.m; sourceTree = "<group>"; };
+		51B28AD4207B3D000047072C /* DesEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesEncrypt.h; sourceTree = "<group>"; };
+		51B28AD5207B3D000047072C /* DesEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesEncrypt.m; sourceTree = "<group>"; };
+		51B28AD8207B40640047072C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		51B28AD9207B40640047072C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		51B28ADA207B40640047072C /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,9 @@
 		51B28ACA207B13C40047072C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				51B28AD7207B40640047072C /* Base64 */,
+				51B28AD3207B3D000047072C /* DES */,
+				51B28ACF207B18CB0047072C /* HMAC */,
 				51B28ACB207B13C40047072C /* MD5 */,
 			);
 			path = Classes;
@@ -151,6 +164,34 @@
 				51B28ACD207B14000047072C /* MD5_code.m */,
 			);
 			path = MD5;
+			sourceTree = "<group>";
+		};
+		51B28ACF207B18CB0047072C /* HMAC */ = {
+			isa = PBXGroup;
+			children = (
+				51B28AD0207B18F80047072C /* HMac_code.h */,
+				51B28AD1207B18F80047072C /* HMac_code.m */,
+			);
+			path = HMAC;
+			sourceTree = "<group>";
+		};
+		51B28AD3207B3D000047072C /* DES */ = {
+			isa = PBXGroup;
+			children = (
+				51B28AD4207B3D000047072C /* DesEncrypt.h */,
+				51B28AD5207B3D000047072C /* DesEncrypt.m */,
+			);
+			path = DES;
+			sourceTree = "<group>";
+		};
+		51B28AD7207B40640047072C /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				51B28AD8207B40640047072C /* GTMBase64.h */,
+				51B28AD9207B40640047072C /* GTMDefines.h */,
+				51B28ADA207B40640047072C /* GTMBase64.m */,
+			);
+			path = Base64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,10 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B28AD6207B3D000047072C /* DesEncrypt.m in Sources */,
 				51B28A9D207B12A20047072C /* ViewController.m in Sources */,
 				51B28ACE207B14000047072C /* MD5_code.m in Sources */,
+				51B28AD2207B18F80047072C /* HMac_code.m in Sources */,
 				51B28AA8207B12A20047072C /* main.m in Sources */,
 				51B28A9A207B12A20047072C /* AppDelegate.m in Sources */,
+				51B28ADB207B40640047072C /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
