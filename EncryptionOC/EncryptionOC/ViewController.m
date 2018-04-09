@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MD5_code.h"
 @interface ViewController ()
 
 @end
@@ -16,13 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self md5_code];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)md5_code{
+    
+    NSString *password = @"password";
+    NSString *code = [MD5_code md5:password];
 }
 
 
