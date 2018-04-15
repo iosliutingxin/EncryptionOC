@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		510A09E420839F1500BD0551 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 510A09E320839F1500BD0551 /* EncryptionTools.m */; };
-		511B0E64207DBED9006F9EC8 /* new.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511B0E63207DBED9006F9EC8 /* new.storyboard */; };
 		51B28A9A207B12A20047072C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28A99207B12A20047072C /* AppDelegate.m */; };
 		51B28A9D207B12A20047072C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28A9C207B12A20047072C /* ViewController.m */; };
 		51B28AA0207B12A20047072C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B28A9E207B12A20047072C /* Main.storyboard */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		510A09E220839F1500BD0551 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
 		510A09E320839F1500BD0551 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
-		511B0E63207DBED9006F9EC8 /* new.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = new.storyboard; sourceTree = "<group>"; };
 		51B28A95207B12A20047072C /* EncryptionOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptionOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B28A98207B12A20047072C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		51B28A99207B12A20047072C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				51B28A99207B12A20047072C /* AppDelegate.m */,
 				51B28A9B207B12A20047072C /* ViewController.h */,
 				51B28A9C207B12A20047072C /* ViewController.m */,
-				511B0E63207DBED9006F9EC8 /* new.storyboard */,
 				51B28A9E207B12A20047072C /* Main.storyboard */,
 				51B28AA1207B12A20047072C /* Assets.xcassets */,
 				51B28AA3207B12A20047072C /* LaunchScreen.storyboard */,
@@ -319,7 +316,6 @@
 				51B28AA5207B12A20047072C /* LaunchScreen.storyboard in Resources */,
 				51B28AA2207B12A20047072C /* Assets.xcassets in Resources */,
 				51B28AA0207B12A20047072C /* Main.storyboard in Resources */,
-				511B0E64207DBED9006F9EC8 /* new.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
