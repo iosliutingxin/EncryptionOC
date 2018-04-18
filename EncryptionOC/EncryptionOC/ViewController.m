@@ -19,8 +19,14 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    self.view.backgroundColor = [UIColor whiteColor];
     [super viewDidLoad];
-    [self DES];
+}
+//点击页面
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    NSLog(@"hello world");
+    
 }
 
 -(void)md5_code{

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		510A09E420839F1500BD0551 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 510A09E320839F1500BD0551 /* EncryptionTools.m */; };
+		5178746C20877DFB00AAE138 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5178746B20877DFB00AAE138 /* RSACryptor.m */; };
 		51B28A9A207B12A20047072C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28A99207B12A20047072C /* AppDelegate.m */; };
 		51B28A9D207B12A20047072C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B28A9C207B12A20047072C /* ViewController.m */; };
 		51B28AA0207B12A20047072C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B28A9E207B12A20047072C /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		510A09E220839F1500BD0551 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
 		510A09E320839F1500BD0551 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
+		5178746A20877DFB00AAE138 /* RSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptor.h; sourceTree = "<group>"; };
+		5178746B20877DFB00AAE138 /* RSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptor.m; sourceTree = "<group>"; };
 		51B28A95207B12A20047072C /* EncryptionOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptionOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B28A98207B12A20047072C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		51B28A99207B12A20047072C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +106,15 @@
 			path = Cipher;
 			sourceTree = "<group>";
 		};
+		5178746920877DFB00AAE138 /* Cipher-RSA */ = {
+			isa = PBXGroup;
+			children = (
+				5178746A20877DFB00AAE138 /* RSACryptor.h */,
+				5178746B20877DFB00AAE138 /* RSACryptor.m */,
+			);
+			path = "Cipher-RSA";
+			sourceTree = "<group>";
+		};
 		51B28A8C207B12A20047072C = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 		51B28ACA207B13C40047072C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5178746920877DFB00AAE138 /* Cipher-RSA */,
 				510A09E120839F1500BD0551 /* Cipher */,
 				51B28AD7207B40640047072C /* Base64 */,
 				51B28AD3207B3D000047072C /* DES */,
@@ -346,6 +359,7 @@
 				51B28ACE207B14000047072C /* MD5_code.m in Sources */,
 				51B28AD2207B18F80047072C /* HMac_code.m in Sources */,
 				51B28AA8207B12A20047072C /* main.m in Sources */,
+				5178746C20877DFB00AAE138 /* RSACryptor.m in Sources */,
 				51B28A9A207B12A20047072C /* AppDelegate.m in Sources */,
 				51B28ADB207B40640047072C /* GTMBase64.m in Sources */,
 			);
