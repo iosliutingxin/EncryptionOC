@@ -11,6 +11,7 @@
 #import "HMac_code.h"
 #import "DesEncrypt.h"
 #import "EncryptionTools.h"
+#import "RSACryptor.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,8 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     NSLog(@"hello world");
+    [self RSA];
+
     
 }
 
@@ -87,6 +90,26 @@
     
 }
 
+-(void)RSA{
+    //1.加载公钥
+    [[RSACryptor sharedRSACryptor] loadPublicKey:[[NSBundle mainBundle] pathForResource:@"rsacert.der" ofType:nil]];
+//    NSLog(@"路径————-%@",[[NSBundle mainBundle] pathForResource:@"rsacert.der" ofType:nil]);
+    
+    //2、加载密钥
+    [[RSACryptor sharedRSACryptor] loadPrivateKey:[[NSBundle mainBundle] pathForResource:@"p.p12" ofType:nil] password:@"fmmmf3vq"];
+    
+    //3.开始加密
+    NSData *result = [[RSACryptor sharedRSACryptor] encryptData:[@"hello world" dataUsingEncoding:NSUTF8StringEncoding]];
+    //base64编码
+    NSString *base64 =  [result base64EncodedStringWithOptions:0];
+    //加密信息
+    NSLog(@"base64==%@",base64);
+    
+    //4、解密
+     NSData * jiemi = [[RSACryptor sharedRSACryptor] decryptData:result];
+     NSString *str = [[NSString alloc]initWithData:jiemi encoding:NSUTF8StringEncoding];
+     NSLog(@"解密==%@",str);
+}
 
 
 @end
